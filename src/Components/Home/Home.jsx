@@ -6,7 +6,7 @@ import './home.css'
 import Facility from '../Facility';
 import Teachers from '../Teachers';
 import Gallery from './Gallery';
-import CounterSection from './Countersection';
+import CounterSection from "./CounterSection";
 import Testimonials from './Testimonials';
 import Partners from './Partners';
 import Event from './Event';
