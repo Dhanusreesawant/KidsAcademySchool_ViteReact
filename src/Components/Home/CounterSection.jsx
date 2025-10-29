@@ -1,15 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { FaUserGraduate, FaSchool, FaBus, FaChalkboardTeacher } from "react-icons/fa";
 import "./CounterSection.css";
 
 const CounterSection = () => {
-  const counters = [
+   const counters = useMemo(() => [
     { id: 1, icon: <FaUserGraduate size={50} />, title: "Total Students", target: 250 },
     { id: 2, icon: <FaSchool size={50} />, title: "Class Rooms", target: 35 },
     { id: 3, icon: <FaBus size={50} />, title: "Schools Bus", target: 10 },
     { id: 4, icon: <FaChalkboardTeacher size={50} />, title: "Total Teachers", target: 40 },
-  ];
+  ], []);
+
 
   const [counts, setCounts] = useState(counters.map(() => 0));
 
@@ -38,7 +39,7 @@ const CounterSection = () => {
     });
 
     return () => timers.forEach(clearInterval);
-  }, []);
+  }, [counters]);
 
   return (
     <section className="counter-section py-5 text-white text-center">
