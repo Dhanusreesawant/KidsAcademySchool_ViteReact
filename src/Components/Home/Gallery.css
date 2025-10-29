@@ -1,0 +1,65 @@
+/* FILTER BUTTONS */
+.filter-btn {
+  border: none;
+  background: none;
+  font-weight: 600;
+  margin: 0 12px;
+  padding: 8px 12px;
+  color: #ff7b00;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  color: #6f42c1;
+  text-decoration: underline;
+}
+
+/* GALLERY CARD */
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.1);
+}
+
+/* OVERLAY EFFECT */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(111, 66, 193, 0.85);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.4s ease;
+}
+
+.gallery-card:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-content h5 {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.overlay-content p {
+  font-size: 14px;
+}

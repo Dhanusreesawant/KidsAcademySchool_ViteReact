@@ -1,0 +1,62 @@
+[
+    {
+        "lable": "Home",
+        "link": "/",
+        "isDropdown": false,
+        "textColor": "text-red"
+    },
+    {
+        "lable": "About",
+        "link": "./About",
+        "isDropdown": false,
+        "textColor": "text-yellow"
+    },
+    {
+        "lable": "Classes",
+        "link": "/classes",
+        "isDropdown": false,
+        "textColor": "text-orange"
+    },
+    {
+        "lable": "Teachers",
+        "link": "/teachers",
+        "isDropdown": false,
+        "textColor": "text-purple"
+    },
+    {
+        "lable": "Gallery",
+        "link": "/gallery",
+        "isDropdown": true,
+        "textColor": "text-lightblue",
+        "dropdownMenu": [
+            {
+                "lable": "Gallery",
+                "link": "/gallery",
+                "textColor": "text-lightblue"
+            },
+            {
+                "lable": "Event",
+                "link": "/event",
+                "textColor": "text-lightblue"
+            }
+        ]
+    },
+    {
+        "lable": "Blog",
+        "link": "/blog",
+        "isDropdown": false,
+        "textColor": "text-pink"
+    },
+    {
+        "lable": "Shop",
+        "link": "/shop",
+        "isDropdown": false,
+        "textColor": "text-lightgreen"
+    },
+    {
+        "lable": "Contact",
+        "link": "/contact",
+        "isDropdown": false,
+        "textColor": "text-brown"
+    }
+]
