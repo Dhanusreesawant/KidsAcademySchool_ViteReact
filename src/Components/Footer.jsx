@@ -10,6 +10,7 @@ import {
   FaHome,
   FaEnvelope,
 } from "react-icons/fa";
+import Logo from "./../assets/img/logo.png";
 
 
 
@@ -50,7 +51,7 @@ function Footer() {
             {/* ---- Logo & About ---- */}
             <Col lg={3} sm={6} className="mb-4">
               <div className="single-footer-widget">
-                <img src={"./src/assets/img/logo.png"} alt="logo" className="img-fluid" />
+                <img src={Logo} alt="logo" className="img-fluid" />
 
                 <p className="mt-5">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
