@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap';
+import aboutimg from "../../assets/img/about.png";
 
 function Aboutbanner(){
     return(
@@ -9,7 +10,7 @@ function Aboutbanner(){
             <div className="container">
                 <div className="row">
                     <div className="col-lg-6">
-                        <img src={'./src/assets/img/about.png'} alt="kidsimage" className="img-fluid" />
+                        <img src={aboutimg} alt="kidsimage" className="img-fluid" />
                     </div>
                     <div className="col-lg-6">
                         <h2>About our KidsAcademy</h2>

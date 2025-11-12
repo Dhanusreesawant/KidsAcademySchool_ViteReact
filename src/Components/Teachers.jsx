@@ -5,28 +5,32 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import Teacher01 from "./../assets/img/teacher_01.jpg";
+import Teacher02 from "./../assets/img/teacher_02.jpg";
+import Teacher03 from "./../assets/img/teacher_03.jpg";
+import Teacher04 from "./../assets/img/teacher_04.jpg";
 
 const teacher_Details = [
     {
-        img: "./src/assets/img/teacher_01.jpg",
+        img: Teacher01,
         name: "Broklyn Doel",
         role: "Sains Teacher",
         bgColor: "bg-purple"
     },
     {
-        img: "./src/assets/img/teacher_02.jpg",
+        img: Teacher02,
         name: "Alex Jhonson",
         role: "Art Teacher",
         bgColor: "bg-red"
     },
     {
-        img: "./src/assets/img/teacher_03.jpg",
+        img: Teacher03,
         name: "Robot Jhonson",
         role: "Math Teacher",
         bgColor: "bg-orange"
     },
     {
-        img: "./src/assets/img/teacher_04.jpg",
+        img: Teacher04,
         name: "Janaton Doe",
         role: "English Teacher",
         bgColor: "bg-lightblue"
