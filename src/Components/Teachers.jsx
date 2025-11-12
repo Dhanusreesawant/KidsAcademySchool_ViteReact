@@ -36,13 +36,13 @@ const teacher_Details = [
         bgColor: "bg-lightblue"
     },
     {
-        img: "./src/assets/img/teacher_03.jpg",
+        img: Teacher02,
         name: "Robot Jhonson",
         role: "Math Teacher",
         bgColor: "bg-orange"
     },
     {
-        img: "./src/assets/img/teacher_04.jpg",
+        img: Teacher01,
         name: "Janaton Doe",
         role: "English Teacher",
         bgColor: "bg-lightblue"

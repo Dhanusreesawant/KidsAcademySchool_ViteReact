@@ -4,6 +4,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 import "./Testimonials.css";
+import Testi01 from "./../../assets/img/testimonial_01.jpg";
+import Testi02 from "./../../assets/img/testimonial_02.jpg";
+import Testi03 from "./../../assets/img/testimonial_03.jpg";
 
 const testimonials = [
   {
@@ -11,7 +14,7 @@ const testimonials = [
     text: "Professionally predominate that timely infrastructures tops line methodologies.",
     name: "Joly Smith",
     role: "UI/UX Designer",
-    image: "./src/assets/img/testimonial_01.jpg",
+    image: Testi01,
     color: "#fc7f0c",
   },
   {
@@ -19,7 +22,7 @@ const testimonials = [
     text: "Professionally predominate that timely infrastructures tops line methodologies.",
     name: "John Doe",
     role: "Frontend Developer",
-    image: "./src/assets/img/testimonial_02.jpg",
+    image: Testi02,
     color: "#e84b3a",
   },
   {
@@ -27,7 +30,7 @@ const testimonials = [
     text: "Professionally predominate that timely infrastructures tops line methodologies.",
     name: "Sara Lee",
     role: "Graphic Designer",
-    image: "./src/assets/img/testimonial_03.jpg",
+    image: Testi03,
     color: "#fc7f0c",
   },
   {
