@@ -3,15 +3,17 @@ import { Container, Row, Col } from "react-bootstrap";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Partner01 from "../../assets/img/partner_03.jpg";
+import Partner02 from "../../assets/img/partner_04.jpg";
 
 function Partners() {
   const partners = [
-    "./src/assets/img/partner_03.jpg",
-    "./src/assets/img/partner_04.jpg",
-    "./src/assets/img/partner_03.jpg",
-    "./src/assets/img/partner_04.jpg",
-    "./src/assets/img/partner_03.jpg",
-    "./src/assets/img/partner_04.jpg",
+    Partner01,
+    Partner02,
+    Partner02,
+    Partner01,
+    Partner02,
+    Partner01,
   ];
 
   const settings = {
