@@ -2,9 +2,12 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
+import Class1 from "../../assets/img/class_01.jpg";
+import Class2 from "../../assets/img/class_02.jpg";
+import Class3 from "../../assets/img/class_03.jpg";
 const eventcontent = [
   {
-    image: "./src/assets/img/class_01.jpg",
+    image: Class1,
     title: "Imagination class",
     style: { color: "#ffc000" },
     time: "9:00 - 5:00",
@@ -13,7 +16,7 @@ const eventcontent = [
     description: "Drastically innovate fully researched and applications awesome theme education",
   },
   {
-    image: "./src/assets/img/class_03.jpg",
+    image: Class2,
     title: "Creative Thinking",
     style: { color: "#e84b3a" },
     time: "10:00 - 4:00",
@@ -22,7 +25,7 @@ const eventcontent = [
     description: "Credibly actualize pandemic strategic theme platform.",
   },
   {
-    image: "./src/assets/img/class_02.jpg",
+    image: Class3,
     title: "Practical Workshop",
     style: { color: "#fc7f0c" },
     time: "11:00 - 3:00",
