@@ -1,5 +1,8 @@
 import { Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import Banner1 from "../../assets/img/banner_01.jpg";
+import Banner2 from "../../assets/img/banner_02.jpg";
+import Banner3 from "../../assets/img/banner_03.jpg";
 
 function Homebanner() {
     return (
@@ -7,7 +10,7 @@ function Homebanner() {
       <section id="Homebanner">
           <Carousel>
             <Carousel.Item interval={1000}>
-                <img src={'./src/assets/img/banner_01.jpg'} alt="banner" className="img-fluid" />
+                <img src={Banner1} alt="banner" className="img-fluid" />
                 <Carousel.Caption>
                     <div className="banner-content">
                         <h3>Welcome to KidsAcademy</h3>
@@ -22,7 +25,7 @@ function Homebanner() {
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={500}>
-                <img src={'./src/assets/img/banner_02.jpg'} alt="banner" className="img-fluid" />
+                <img src={Banner2} alt="banner" className="img-fluid" />
                 <Carousel.Caption>
                     <div className="banner-content">
                        <h3>Welcome to KidsAcademy</h3>
@@ -37,7 +40,7 @@ function Homebanner() {
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
-                <img src={'./src/assets/img/banner_03.jpg'} alt="banner" className="img-fluid" />
+                <img src={Banner3} alt="banner" className="img-fluid" />
                 <Carousel.Caption>
                    <div className="banner-content">
                         <h3>Welcome to KidsAcademy</h3>
