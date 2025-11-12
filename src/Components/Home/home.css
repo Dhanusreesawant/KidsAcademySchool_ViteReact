@@ -258,7 +258,7 @@
   transform: scale(1.05);
 }
 #PartnersBox{
-  background: linear-gradient(rgba(252, 127, 12, .8),rgba(252, 127, 12, .8)),url(./src/assets/img/partner-bg.jpg);
+  background: linear-gradient(rgba(252, 127, 12, .8),rgba(252, 127, 12, .8)),url(./../../assets/img/partner-bg.jpg);
   background-size: cover;
   padding: 70px 0px;
   position: relative;
@@ -318,7 +318,7 @@
 }
 #Newsletter::before {
   content: '';
-  background: url(./src/assets/img/section_triangle_top.png) repeat-x;
+  background: url(./../../assets/img/section_triangle_top.png) repeat-x;
   position: absolute;
   top: 0px;
   left: 0;
