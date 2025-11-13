@@ -20,7 +20,7 @@ function Home() {
     <Facility/>
     <Aboutbanner/>
     <Classes/>
-    <Teachers/>
+    <Teachers showAll={false} />
     <Gallery/>
     <CounterSection/>
     <Testimonials/>

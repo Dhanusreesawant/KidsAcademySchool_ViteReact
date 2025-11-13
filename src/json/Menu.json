@@ -7,7 +7,7 @@
     },
     {
         "lable": "About",
-        "link": "./About",
+        "link": "./about",
         "isDropdown": false,
         "textColor": "text-yellow"
     },

@@ -1,31 +1,27 @@
 import React from 'react'
-import Homebanner from './Homebanner';
-import Aboutbanner from './Aboutbanner';
-import Classes from '../classes';
-import './home.css'
-import Facility from '../Facility';
-import Teachers from '../Teachers';
-import Gallery from './Gallery';
-import CounterSection from './Countersection';
-import Testimonials from './Testimonials';
-import Partners from './Partners';
-import Event from './Event';
-import News from './News';
-import Footer from '../Footer';
+import Aboutbanner from './Home/Aboutbanner';
+import Facility from './Facility';
+import Teachers from './Teachers';
+import Testimonials from './Home/Testimonials';
+import News from './Home/News';
+import Footer from './Footer';
+import Mainbanner from './Mainbanner';
+import Choose from './Choose';
+import aboutBg from './../assets/img/about-bg.jpg'
 
 function About() {
   return (
     <>
-    <Homebanner/>
+    <Mainbanner
+        title="About Our KidsAcademy"
+        subtitle="Home - About Us"
+        background={aboutBg}
+   />
     <Facility/>
     <Aboutbanner/>
-    <Classes/>
+    <Choose/>
     <Teachers/>
-    <Gallery/>
-    <CounterSection/>
     <Testimonials/>
-    <Partners/>
-    <Event/>
     <News/>
     <Footer/>
     </>
