@@ -18,6 +18,9 @@
   height: 10px;
   z-index: 99;
 }
+#TeachersPlain {
+  background: none;
+}
 .section-notch {
     position: relative;
 }

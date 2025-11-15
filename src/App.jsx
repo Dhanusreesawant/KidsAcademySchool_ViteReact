@@ -7,6 +7,11 @@ import Home from './Components/Home/Home';
 import About from "./Components/About";
 import Classmenu from './Components/Classmenu';
 import Teachermenu from './Components/Teachersmenu';
+import Gallerymenu from './Components/Gallerymenu';
+import Eventmenu from './Components/Eventmenu';
+import BlogPage from './Components/BlogPage';
+import ProductPage from './Components/Products/ProductPage';
+import ContactPage from './Components/ContactPage';
 
 function App() {
 
@@ -20,11 +25,11 @@ function App() {
           <Route path="/about" element={<About/>}/>
           <Route path="/classes" element={<Classmenu/>}/>
           <Route path="/teachers" element={<Teachermenu/>}/>
-          <Route path="/gallery" element={<h1>Gallery page</h1>}/>
-          <Route path="/event" element={<h1>Event page</h1>}/>
-          <Route path="/blog" element={<h1>Shop page</h1>}/>
-          <Route path="/shop" element={<h1>Teachers page</h1>}/>
-          <Route path="/contact" element={<h1>Contact page</h1>}/>
+          <Route path="/gallery" element={<Gallerymenu/>}/>
+          <Route path="/event" element={<Eventmenu/>}/>
+          <Route path="/blog" element={<BlogPage/>}/>
+          <Route path="/shop" element={<ProductPage/>}/>
+          <Route path="/contact" element={<ContactPage/>}/>
           <Route path="*" element={<h1>404 Page Not found</h1>}/>
         </Routes>
       </BrowserRouter>

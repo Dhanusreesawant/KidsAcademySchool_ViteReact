@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Kids Learning Book",
+    "price": 120,
+    "image": "/products/product_07.jpg",
+    "category": "Books"
+  },
+  {
+    "id": 2,
+    "title": "Color Pencil Box",
+    "price": 90,
+    "image": "/products/product_09.jpg",
+    "category": "Stationery"
+  },
+  {
+    "id": 3,
+    "title": "School Bag",
+    "price": 550,
+    "image": "/products/product_10.jpg",
+    "category": "Bags"
+  },
+  {
+    "id": 4,
+    "title": "Kids Lunch Bag",
+    "price": 300,
+    "image": "/products/product_11.jpg",
+    "category": "Toys"
+  },{
+    "id": 5,
+    "title": "Kids School Bag",
+    "price": 300,
+    "image": "/products/product_07.jpg",
+    "category": "Toys"
+  },{
+    "id": 6,
+    "title": "Kids School Bag",
+    "price": 300,
+    "image": "/products/product_11.jpg",
+    "category": "Toys"
+  }
+]

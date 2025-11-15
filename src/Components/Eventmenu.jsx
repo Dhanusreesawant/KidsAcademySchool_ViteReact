@@ -5,17 +5,16 @@ import News from './Home/News';
 import Footer from './Footer';
 import Mainbanner from './Mainbanner';
 import aboutBg from './../assets/img/about-bg.jpg';
-import Teachers from './Teachers';
-
+import Event from './Home/Event';
 function Teachermenu() {
   return (
     <>
     <Mainbanner
-      title="Meet our Teachers"
-      subtitle="Home - Teachers"
+      title="our School Event"
+      subtitle="Home - Event"
       background={aboutBg}
     />    
-    <Teachers sectionId="TeachersPlain" showAll={true} showHeader={false}/>
+    <Event showHeader = {false} showAll = {true}/>
     <News/>
     <Footer/>
     </>

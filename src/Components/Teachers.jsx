@@ -61,11 +61,11 @@ const teacher_Details = [
   },
 ];
 
-function Teachers({ showAll = false , showHeader = true }) {
+function Teachers({ showAll = false , showHeader = true , sectionId = "Teachers" }) {
   const displayedTeachers = showAll ? teacher_Details : teacher_Details.slice(0, 4);
 
   return (
-    <section id="Teachers" className="py-5">
+    <section id={sectionId} className="py-5">
       <Container>
         {showHeader && (
             <Row className="mb-4">
@@ -82,7 +82,7 @@ function Teachers({ showAll = false , showHeader = true }) {
 
         <Row>
           {displayedTeachers.map((item, index) => (
-            <Col key={index} lg={6} className="py-3 px-4">
+            <Col key={index} lg={6} className="py-3 px-4 text-white">
               <div>
                 <Row>
                   <Col sm={4} className="p-0">

@@ -1,0 +1,16 @@
+.product-card img {
+  height: 180px;
+  object-fit: contain;
+}
+
+.sidebar-area h5 {
+  color: #ff7f00;
+}
+
+.category-item:hover {
+  color: #ff7f00;
+}
+
+.product-page {
+  background: #fafafa;
+}

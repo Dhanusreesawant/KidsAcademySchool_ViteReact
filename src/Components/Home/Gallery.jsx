@@ -14,7 +14,7 @@ const images = [
   {id: 9, src:  "https://aminurislam.com/labartisan/kidsacademy-demo/kidsacademy/images/gallery/gallery_02.jpg", category: "art" , title:"Product Name Here"}
 ];
 
-const Gallery = () => {
+const Gallery = ({ showHeader = true }) => {
   const [filter, setFilter] = useState("all");
 
   const filters = [
@@ -30,17 +30,21 @@ const Gallery = () => {
       ? images
       : images.filter((img) => img.category === filter);
 
+  
+    
+
   return (
     <section id="gallery" className="py-5 bg-white">
       <Container>
+        {showHeader && (
         <Row className='mb-5'>
                  <Col lg={7} className="text-center mx-auto">
-                   <h2 className="fw-bold text-purple mb-3">Meet Our Teachers</h2>
+                   <h2 className="fw-bold text-purple mb-3">Our School Gallery</h2>
                           <p>
                           Rapidiously expedite granular imperatives before economically sound web services. Credibly actualize pandemic strategic themeplatform.
                           </p>
                   </Col>
-         </Row>
+         </Row>)}
         <div className="text-center mb-4">
           {filters.map((btn) => (
             <button
@@ -74,6 +78,8 @@ const Gallery = () => {
       </Container>
     </section>
   );
+
+  
 };
 
 export default Gallery;

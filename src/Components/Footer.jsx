@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import {
   FaFacebookF,
@@ -28,8 +28,29 @@ import "./Footer.css";
 import img1 from "./../assets/img/news_1.jpg";
 import img2 from "./../assets/img/news_1.jpg";
 import img3 from "./../assets/img/news_1.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookF,
+  faDribbble,
+  faGooglePlusG,
+  faTwitter,
+  faPinterestP,
+} from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
+  const [showButton, setShowButton] = useState(false);
+
+  // show scroll-to-top button
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) setShowButton(true);
+      else setShowButton(false);
+    });
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   const galleryImages = [
     gallery1,
     gallery2,
@@ -45,7 +66,7 @@ function Footer() {
   return (
     <>
       {/* ===== Footer Area ===== */}
-      <footer className="footer-area py-5">
+      <footer className="footer-area pt-5">
         <Container>
           <Row>
             {/* ---- Logo & About ---- */}
@@ -142,19 +163,34 @@ function Footer() {
             </Col>
           </Row>
         </Container>
-      </footer>
+      
 
       {/* ===== Copyright ===== */}
-      <div className="copyright-area">
+       <div className="footer-bottom">
         <Container>
-          <p>
-            © {new Date().getFullYear()} KidsAcademy. All Rights Reserved by{" "}
-            <a href="https://cncwebworld.com/" target="_blank" rel="noreferrer">
-              cncwebworld
-            </a>
+          <div className="footer-bottom-inner ">
+           <p className="fw-5 fs-5">
+                © 2021. Designed By <span className="text-pink fw-bold">LabArtisan</span>
           </p>
-        </Container>
+
+      <div className="footer-social-icons">
+        <a href="#" className="bg-pink"><FontAwesomeIcon icon={faFacebookF} /></a>
+        <a href="#" className="bg-purple"><FontAwesomeIcon icon={faDribbble} /></a>
+        <a href="#" className="bg-orange"><FontAwesomeIcon icon={faGooglePlusG} /></a>
+        <a href="#" className="bg-yellow"><FontAwesomeIcon icon={faTwitter} /></a>
+        <a href="#" className="bg-pink"><FontAwesomeIcon icon={faPinterestP} /></a>
       </div>
+        </div>
+  </Container>
+</div>
+      </footer>
+
+      {/* SCROLL TO TOP BUTTON */}
+      {showButton && (
+        <div className="scroll-top" onClick={scrollToTop}>
+          ↑
+        </div>
+      )}
     </>
   );
 }
