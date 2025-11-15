@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import "./MainBanner.css";
+import "./Mainbanner.css";
 
 function MainBanner({ title, subtitle, background }) {
   return (
